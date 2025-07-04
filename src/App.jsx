@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./static/Footer";
 import Navbar from "./static/Navbar";
 import Invest from "./pages/Invest";
 import Shop from "./pages/Shop";
+import Footer from "./static/Footer";
+
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Route path="/invest" element={<Invest />} />
           <Route path="/shop" element={<Shop />} />
         </Routes>
-        <Footer />
+
+        <Footer/>
       </BrowserRouter>
     </div>
   );
