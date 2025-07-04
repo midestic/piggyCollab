@@ -1,6 +1,6 @@
 
 
-const Footer = () => {
+export default function Footer () {
   return (
     <div className="max-w-[1200px]">
       <section>
@@ -104,6 +104,4 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer
 
