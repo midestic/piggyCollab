@@ -3,6 +3,7 @@ import Footer from "./static/Footer";
 import Navbar from "./static/Navbar";
 import Invest from "./pages/Invest";
 import Shop from "./pages/Shop";
+import HouseMoney from "./pages/HouseMoney";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/invest" element={<Invest />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/housemoney" element={<HouseMoney />} />
         </Routes>
         <Footer />
       </BrowserRouter>
