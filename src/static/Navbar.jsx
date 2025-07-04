@@ -28,7 +28,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <span>shop</span>
+        <Link to="/shop">
+          <span>Shop</span>
+        </Link>
         <div className="w-[20%] border">
           <button>Login</button>
           <button>Sign up</button>
