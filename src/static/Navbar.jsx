@@ -22,7 +22,9 @@ export default function Navbar() {
             <span>Safelock</span>
             <span>Target Savings</span>
             <span>flex Naira</span>
-            <span>Flex Dollar </span>
+            <Link to="/flex-dollar">
+              <span>Flex Dollar </span>
+            </Link>
             <Link to="/housemoney">
               <span>House Money</span>
             </Link>

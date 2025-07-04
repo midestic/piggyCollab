@@ -1,6 +1,6 @@
 import React from "react";
-import housemoney from "../../assets/images/housemoney.png";
-import PiggyBtn from "../reusable/PiggyBtn";
+import housemoney from "../../../assets/images/housemoney.png";
+import PiggyBtn from "../../reusable/PiggyBtn";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple, FaHome } from "react-icons/fa";
 
