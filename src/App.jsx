@@ -3,7 +3,7 @@ import Footer from "./static/Footer";
 import Navbar from "./static/Navbar";
 function App() {
   return (
-    <div className="max-w-[1300] mx-auto ">
+    <div className="max-w-[1300px] mx-auto ">
       <BrowserRouter>
         <Navbar />
         <Routes>
