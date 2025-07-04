@@ -12,7 +12,7 @@ export default function Navbar() {
           </div>
           <div className="flex justify-between items-center w-[85%] gap-x-[10px]">
             <span>Save</span>
-            <Link>
+            <Link to="/invest">
               <span>Invest</span>
             </Link>
             <span>Stories</span>
