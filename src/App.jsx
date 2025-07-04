@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/invest" element={<Invest/>} />
+          <Route path="/invest" element={<Invest />} />
         </Routes>
 
         <Footer />
