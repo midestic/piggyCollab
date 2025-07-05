@@ -5,6 +5,7 @@ import Invest from "./pages/Invest";
 import Shop from "./pages/Shop";
 import HouseMoney from "./pages/HouseMoney";
 import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/invest" element={<Invest />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/housemoney" element={<HouseMoney />} />
+            <Route path="/Blog" element={<Blog/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

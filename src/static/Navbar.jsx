@@ -198,8 +198,11 @@ export default function Navbar() {
                         alt=""
                       />
                     </div>
+
                     <div className=" w-[70%]">
+                    <Link to={"/Blog"}>
                       <p className="font-[600] text-[16px]">Blog</p>
+                    </Link>
                     </div>
                   </div>
 
