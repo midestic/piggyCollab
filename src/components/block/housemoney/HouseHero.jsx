@@ -1,13 +1,13 @@
 import React from "react";
-import housemoney from "../../assets/images/housemoney.png";
-import PiggyBtn from "../reusable/PiggyBtn";
+import housemoney from "../../../assets/images/housemoney.png";
+import PiggyBtn from "../../reusable/PiggyBtn";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple, FaHome } from "react-icons/fa";
 
 const HouseHero = () => {
   return (
-    <div className="h-[100vh] bg-[#0c0e1b]">
-      <div className=" flex items-center w-[1200px] mx-auto h-full ">
+    <div className="max-h-[100vh] bg-[#0c0e1b]">
+      <div className=" flex items-center max-w-[1200px] mx-auto h-full ">
         <div className="flex items-center justify-between w-full mt-[7.5%]">
           <div className="text-white w-[500px]">
             <h1 className="text-[50px] font-semibold tracking-tighter ">

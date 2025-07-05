@@ -72,36 +72,39 @@ export default function Navbar() {
                       </p>
                     </div>
                   </div>
+                  <Link to="/targets">
+                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                      <div className=" w-[35px] ">
+                        <img
+                          className="w-[35px] h-[35px]"
+                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/targets_icon_a382a2df4f_10353cd31e/targets_icon_a382a2df4f_10353cd31e.png"
+                          alt=""
+                        />
+                      </div>
 
-                  <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                    <div className=" w-[35px] ">
-                      <img
-                        className="w-[35px] h-[35px]"
-                        src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/targets_icon_a382a2df4f_10353cd31e/targets_icon_a382a2df4f_10353cd31e.png"
-                        alt=""
-                      />
+                      <div className=" w-[70%]">
+                        <p className="font-[600] text-[16px]">Target Savings</p>
+                        <p className="font-[600] text-[14px]">
+                          Goal-Oriented Savings
+                        </p>
+                      </div>
                     </div>
-                    <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">Target Savings</p>
-                      <p className="font-[600] text-[14px]">
-                        Goal-Oriented Savings
-                      </p>
+                  </Link>
+                  <Link to="/flex-dollar">
+                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                      <div className=" w-[35px] ">
+                        <img
+                          className="w-[35px] h-[35px]"
+                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_dollar_icon_b180813700_8c5227fe52/flex_dollar_icon_b180813700_8c5227fe52.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className=" w-[70%]">
+                        <p className="font-[600] text-[16px]">Flex Dollar</p>
+                        <p className="font-[600] text-[14px]">Dollar Savings</p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                    <div className=" w-[35px] ">
-                      <img
-                        className="w-[35px] h-[35px]"
-                        src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_dollar_icon_b180813700_8c5227fe52/flex_dollar_icon_b180813700_8c5227fe52.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">Flex Dollar</p>
-                      <p className="font-[600] text-[14px]">Dollar Savings</p>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* RIGHT SIDE */}
@@ -161,7 +164,9 @@ export default function Navbar() {
             </Link>
 
             <span>Stories</span>
-            <span>FAQ</span>
+            <Link to="/faqs">
+              <span>FAQ</span>
+            </Link>
 
             <div className="">
               <span
@@ -200,9 +205,9 @@ export default function Navbar() {
                     </div>
 
                     <div className=" w-[70%]">
-                    <Link to={"/Blog"}>
-                      <p className="font-[600] text-[16px]">Blog</p>
-                    </Link>
+                      <Link to={"/Blog"}>
+                        <p className="font-[600] text-[16px]">Blog</p>
+                      </Link>
                     </div>
                   </div>
 

@@ -6,6 +6,9 @@ import Shop from "./pages/Shop";
 import HouseMoney from "./pages/HouseMoney";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
+import FlexDollar from "./pages/FlexDollar";
+import Targets from "./pages/Targets";
+import FAQs from "./pages/FAQs";
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
           <Route path="/invest" element={<Invest />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/housemoney" element={<HouseMoney />} />
-            <Route path="/Blog" element={<Blog/>} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/flex-dollar" element={<FlexDollar />} />
+          <Route path="/targets" element={<Targets />} />
+          <Route path="/faqs" element={<FAQs />} />
         </Routes>
         <Footer />
       </BrowserRouter>
