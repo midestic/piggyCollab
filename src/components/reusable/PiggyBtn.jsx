@@ -21,6 +21,4 @@ const PiggyBtn = ({
   );
 };
 
-
-
-export { PiggyBtn, };
+export default PiggyBtn;
