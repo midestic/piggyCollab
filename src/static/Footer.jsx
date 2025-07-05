@@ -2,7 +2,7 @@
 
 export default function Footer () {
   return (
-    <div className="max-w-[1200px]">
+    <div className="max-w-[1200px] pt-[100px]">
       <section>
       <h1 className="leading-[41px] font-bold text-center text-3xl" >As featured in</h1>
 

@@ -19,7 +19,11 @@ export default function Navbar() {
             <span>FAQ</span>
             <span>Resources</span>
             <span>PiggyBank</span>
-            <span>Safelock</span>
+
+          <Link to= "/safelock">
+          <span>Safelock</span> 
+           </Link>
+
             <span>Target Savings</span>
             <span>flex Naira</span>
             <span>Flex Dollar </span>
