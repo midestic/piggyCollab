@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import MobileNav from "./MobileNav";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [save, setSave] = useState(false);
@@ -49,10 +50,10 @@ export default function Navbar() {
                 className={
                   !save
                     ? "hidden"
-                    : "w-[500px] h-auto   fixed  flex justify-between items-start   rounded-[10px] shadow shadow-gray-500 p-[20px]"
+                    : "w-[500px] h-auto   fixed  flex justify-between items-start   rounded-[10px] shadow shadow-gray-500 p-[20px] bg-white"
                 }
               >
-                <div className="w-[50%]  flex flex-col gap-y-[30px]">
+                <div className="w-[50%]  flex flex-col gap-y-[30px] ">
                   <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
                     <div className=" w-[35px] ">
                       <img
@@ -131,29 +132,34 @@ export default function Navbar() {
                     </div>
                   </div>
 
-                  <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                    <div className=" w-[35px] ">
-                      <img
-                        className="w-[35px] h-[35px]"
-                        src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/house_icon_1_62b781ec0c/house_icon_1_62b781ec0c.png"
-                        alt=""
-                      />
+                  <Link to={"/housemoney"}>
+                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                      <div className=" w-[35px] ">
+                        <img
+                          className="w-[35px] h-[35px]"
+                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/house_icon_1_62b781ec0c/house_icon_1_62b781ec0c.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className=" w-[70%]">
+                        <p className="font-[600] text-[16px]">House Money</p>
+                        <p className="font-[600] text-[14px]">
+                          Semi-Strict Wallet
+                        </p>
+                      </div>
                     </div>
-                    <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">House Money</p>
-                      <p className="font-[600] text-[14px]">
-                        Semi-Strict Wallet
-                      </p>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <span>Invest</span>
+            <Link to={"/invest"}>
+              <span>Invest</span>
+            </Link>
 
             <span>Stories</span>
             <span>FAQ</span>
+
             <div className="">
               <span
                 onMouseEnter={() => {
@@ -177,7 +183,7 @@ export default function Navbar() {
                 className={
                   !resource
                     ? "hidden"
-                    : "w-[500px] h-auto   fixed  flex justify-between items-start   rounded-[10px] shadow shadow-gray-500 p-[20px]"
+                    : "w-[500px] h-auto   fixed  flex justify-between items-start   rounded-[10px] shadow shadow-gray-500 p-[20px] bg-white"
                 }
               >
                 <div className="w-[50%]  flex flex-col gap-y-[30px]">
@@ -265,6 +271,10 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+
+            <Link to={"/shop"}>
+              <span>Shop</span>
+            </Link>
           </div>
         </div>
 
