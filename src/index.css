@@ -4,3 +4,9 @@
     --max-tablet:800px;
     --max-mobile:500px;
 }
+@media (max-width: var(--breakpoint-tablet)) {
+  .some-class {
+    display: flex;
+    flex-direction: column;
+  }
+}
