@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
+import PiggyBtn from "../components/reusable/PiggyBtn";
 
 export default function Navbar() {
   const [save, setSave] = useState(false);
@@ -20,11 +21,13 @@ export default function Navbar() {
       <div className="w-[100%]  flex justify-between items-center max-w-[1200px] mx-auto py-[20px]  max-md:hidden ">
         <div className="w-[70%]  flex justify-between items-center">
           <div className="w-[20%]">
-            <img
-              className="bg-transparent"
-              src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/logo_08e6965627/logo_08e6965627.svg"
-              alt=""
-            />
+            <Link to={"/"}>
+              <img
+                className="bg-transparent"
+                src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/logo_08e6965627/logo_08e6965627.svg"
+                alt=""
+              />
+            </Link>
           </div>
           <div className="flex justify-between items-center w-[70%] gap-x-[10px] font-[600] text-[16px] text-[#3d4f60]">
             <div className="">
@@ -278,9 +281,22 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="w-[20%] ">
-          <button>Login</button>
-          <button>Sign up</button>
+        <div className="w-[27%] flex justify-between items-center gap-x-[5px] border ml-[20px]">
+          <PiggyBtn
+            bgColor=""
+            borderColor=""
+            iconTitle=""
+            title={"Sign in"}
+            textColor=""
+          />
+
+          <PiggyBtn
+            bgColor="#0C1825"
+            borderColor=""
+            iconTitle=""
+            title={"Create free account"}
+            textColor="white"
+          />
         </div>
       </div>
 
