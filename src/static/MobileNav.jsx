@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import PiggyBtn from "../components/reusable/PiggyBtn";
 
 export default function MobileNav() {
   const [nav, setNav] = useState(false);
@@ -55,9 +54,6 @@ export default function MobileNav() {
           <button className="w-[100%] p-[10px] rounded-[30px]">
             create free account
           </button>
-
-          {/* <PiggyBtn title="Sign In" className={"border w-[100%]"} />
-          <PiggyBtn title="Create fre Account" /> */}
         </div>
       </div>
     </div>

@@ -20,10 +20,13 @@ function App() {
           <Route path="/invest" element={<Invest />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/housemoney" element={<HouseMoney />} />
+
           <Route path="/Blog" element={<Blog />} />
           <Route path="/flex-dollar" element={<FlexDollar />} />
           <Route path="/targets" element={<Targets />} />
           <Route path="/faqs" element={<FAQs />} />
+
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
