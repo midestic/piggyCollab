@@ -16,8 +16,8 @@ const Shop = () => {
     getAllProducts();
   }, []);
   return (
-    <div className="flex items-center justify-center flex-col">
-      <div className="mb-5">
+    <div className="flex items-center justify-center flex-col pt-[150px]">
+      <div className="mb-20 ">
         <h1 className="font-semibold text-5xl">Products Listing</h1>
       </div>
       <div className="flex flex-wrap justify-center gap-[20px]">

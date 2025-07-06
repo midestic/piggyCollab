@@ -17,8 +17,8 @@ export default function Navbar() {
   //   setSave(true);
   // }
   return (
-    <div className="w-[100%]">
-      <div className="w-[100%]  flex justify-between items-center max-w-[1200px] mx-auto py-[20px]  max-md:hidden ">
+    <div className=" shadow shadow-gray-500 w-[100%] fixed bg-white  ">
+      <div className=" bg-white w-[100%] flex justify-between items-center max-w-[1200px] mx-auto py-[20px]  max-md:hidden ">
         <div className="w-[70%]  flex justify-between items-center">
           <div className="w-[20%]">
             <Link to={"/"}>
@@ -289,7 +289,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="w-[27%] flex justify-between items-center gap-x-[5px] border ml-[20px]">
+        <div className="w-[27%] flex justify-between items-center gap-x-[5px]  ml-[20px]">
           <PiggyBtn
             bgColor=""
             borderColor=""

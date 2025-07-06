@@ -12,23 +12,27 @@ import FAQs from "./pages/FAQs";
 
 function App() {
   return (
-    <div className="max-w-[1300px] mx-auto ">
+    <div>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/invest" element={<Invest />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/housemoney" element={<HouseMoney />} />
 
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/flex-dollar" element={<FlexDollar />} />
-          <Route path="/targets" element={<Targets />} />
-          <Route path="/faqs" element={<FAQs />} />
+        <div className="max-w-[1300px] mx-auto  ">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/invest" element={<Invest />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/housemoney" element={<HouseMoney />} />
 
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
-        <Footer />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/flex-dollar" element={<FlexDollar />} />
+            <Route path="/targets" element={<Targets />} />
+            <Route path="/faqs" element={<FAQs />} />
+
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );

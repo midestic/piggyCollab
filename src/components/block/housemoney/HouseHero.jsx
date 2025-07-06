@@ -6,7 +6,7 @@ import { FaApple, FaHome } from "react-icons/fa";
 
 const HouseHero = () => {
   return (
-    <div className="max-h-[100vh] bg-[#0c0e1b]">
+    <div className="max-h-[100vh] bg-[#0c0e1b] pt-[100px] overflow-hidden">
       <div className=" flex items-center max-w-[1200px] mx-auto h-full ">
         <div className="flex items-center justify-between w-full mt-[7.5%]">
           <div className="text-white w-[500px]">
@@ -39,7 +39,7 @@ const HouseHero = () => {
             </div>
           </div>
 
-          <div className="w-[400px] ">
+          <div className="w-[400px]  ">
             <img src={housemoney} alt="housemoney" />
           </div>
         </div>

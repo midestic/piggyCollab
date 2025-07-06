@@ -6,7 +6,7 @@ import { FaApple, FaDollarSign } from "react-icons/fa";
 
 const FlexHero = () => {
   return (
-    <div className="max-h-[100vh] bg-[#0c1825]">
+    <div className="max-h-[100vh] bg-[#0c1825] pt-[100px] overflow-hidden">
       <div className=" flex items-center max-w-[1200px] mx-auto h-full ">
         <div className="flex items-center justify-between w-full mt-[7.5%]">
           <div className="text-white w-[500px]">
