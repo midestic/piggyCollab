@@ -33,7 +33,7 @@ const BeBetter = () => {
                 <img
                   src="../../../public/flex-1.png"
                   alt=""
-                  className="max-w-[390px] h-[225px]"
+                  className="max-w-[390px] h-[225px] max-md:w-[100%]"
                 />
               </div>
             </main>
@@ -56,7 +56,7 @@ const BeBetter = () => {
                 <img
                   src="../../../public/flex-2.png"
                   alt=""
-                  className="max-w-[390px] h-[225px] "
+                  className="max-w-[390px] h-[225px] max-md:w-[100%]"
                 />
               </div>
             </main>
@@ -75,11 +75,11 @@ const BeBetter = () => {
                 </p>
               </div>
 
-              <div>
+              <div className="max-md:w-[100%]">
                 <img
                   src="../../../public/flex-3.png"
                   alt=""
-                  className="max-w-[390px]  h-[225px]"
+                  className="max-w-[390px]  h-[225px] max-md:w-[100%]"
                 />
               </div>
             </main>
