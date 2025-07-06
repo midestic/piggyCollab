@@ -9,6 +9,9 @@ import Blog from "./pages/Blog";
 import FlexDollar from "./pages/FlexDollar";
 import Targets from "./pages/Targets";
 import FAQs from "./pages/FAQs";
+import Safelock from "./pages/Safelock";
+import FlexNaira from "./pages/FlexNaira";
+import Piggyvest from "./pages/Piggyvest";
 
 function App() {
   return (
@@ -22,13 +25,14 @@ function App() {
             <Route path="/invest" element={<Invest />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/housemoney" element={<HouseMoney />} />
-
             <Route path="/Blog" element={<Blog />} />
             <Route path="/flex-dollar" element={<FlexDollar />} />
             <Route path="/targets" element={<Targets />} />
             <Route path="/faqs" element={<FAQs />} />
-
             <Route path="/blog" element={<Blog />} />
+            <Route path="/safelock" element={<Safelock />} />
+            <Route path="/flexnaira" element={<FlexNaira />} />
+            <Route path="/piggybank" element={<Piggyvest />} />
           </Routes>
 
           <Footer />

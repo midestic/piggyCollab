@@ -66,10 +66,12 @@ export default function Navbar() {
                       />
                     </div>
                     <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">PiggyBank</p>
-                      <p className="font-[600] text-[14px]">
-                        Automated Savings
-                      </p>
+                      <Link to={"/piggybank"}>
+                        <p className="font-[600] text-[16px]">PiggyBank</p>
+                        <p className="font-[600] text-[14px]">
+                          Automated Savings
+                        </p>
+                      </Link>
                     </div>
                   </div>
                   <Link to="/targets">
@@ -119,8 +121,10 @@ export default function Navbar() {
                       />
                     </div>
                     <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">Safelock</p>
-                      <p className="font-[600] text-[14px]">Fixed Savings</p>
+                      <Link to={"/safelock"}>
+                        <p className="font-[600] text-[16px]">Safelock</p>
+                        <p className="font-[600] text-[14px]">Fixed Savings</p>
+                      </Link>
                     </div>
                   </div>
 
@@ -132,9 +136,15 @@ export default function Navbar() {
                         alt=""
                       />
                     </div>
+
                     <div className=" w-[70%]">
-                      <p className="font-[600] text-[16px]">Flex Naira</p>
-                      <p className="font-[600] text-[14px]">Flexible Savings</p>
+                      <Link to={"/flexnaira"} className="w-[100%]">
+                        <p className="font-[600] text-[16px]">Flex Naira</p>
+
+                        <p className="font-[600] text-[14px]">
+                          Flexible Savings
+                        </p>
+                      </Link>
                     </div>
                   </div>
 
