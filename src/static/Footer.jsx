@@ -14,13 +14,13 @@ import insta from "../assets/images/insta.png";
 
 export default function Footer() {
   return (
-    <div className="max-w-[1200px] pt-[100px]">
+    <div className="max-w-[1200px] pt-[100px] max-md:w-[100%]">
       <section>
-        <h1 className="leading-[41px] font-bold text-center text-3xl">
+        <h1 className="leading-[41px] font-bold text-center text-3xl max-md:mb-[50px] ">
           As featured in
         </h1>
 
-        <div className=" flex gap-[70px] justify-center items-center ">
+        <div className=" flex gap-[70px] justify-center items-center  max-md:flex-wrap">
           <img src={techCabal} alt="" className="max-w-[120px] h-[35px]" />
           <img src={cnbc} alt="" className="max-w-[120px] h-[50px]" />
           <img src={crunch} alt="" className="max-w-[120px] h-[30px]" />
@@ -30,14 +30,14 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className="flex justify-between py-[100px] px-[50px]">
-        <main className="max-w-[155px] ">
-          <img src={logo} alt="" className="my-3" />
-          <img src={comp} alt="" />
+      <section className="flex justify-between py-[100px] px-[50px] max-md:flex-wrap max-md:gap-y-[50px]">
+        <main className="max-w-[155px]   max-md:max-w-[100%]">
+          <img src={logo} alt="" className="my-3 " />
+          <img src={comp} alt="" className="max-md:w-[200px]" />
         </main>
 
-        <div className="flex gap-[60px]  ">
-          <main>
+        <div className="flex gap-[60px]  max-md:flex-wrap max-md:w-[100%]">
+          <main className="max-md:w-[40%] ">
             <p className="text-[#122231] ">Products</p>
             <ul className="text-[#818C97] flex flex-col gap-2.5 ">
               <li className="hover:text-[#0859AE]">
@@ -66,7 +66,7 @@ export default function Footer() {
             </ul>
           </main>
 
-          <main>
+          <main className="max-md:w-[40%] ">
             <p className="text-[#122231]">Company</p>
             <ul className="text-[#818C97] flex flex-col gap-2.5">
               <li className="hover:text-[#0859AE]">
@@ -102,8 +102,8 @@ export default function Footer() {
           </main>
         </div>
 
-        <section className="w-[350px]  flex flex-col   text-[#818C97">
-          <div className="flex  gap-[10px] pb-4  justify-end ">
+        <section className="w-[350px]  flex flex-col   text-[#818C97 ">
+          <div className="flex  gap-[10px] pb-4  justify-end max-md:justify-start ">
             <img
               src={face}
               alt=""
@@ -131,7 +131,7 @@ export default function Footer() {
             />
           </div>
 
-          <main className="text-[14px] flex flex-col gap-2.5 text-right">
+          <main className="text-[14px] flex flex-col gap-2.5 text-right max-md:text-start">
             <p>
               Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos,
               Nigeria.
@@ -142,8 +142,8 @@ export default function Footer() {
         </section>
       </section>
 
-      <main className=" py-[50px]  border-t-[0.2px] mx-[50px]  ">
-        <p className="w-[66em] text-[12px] text-[#818C97] ">
+      <main className=" py-[50px]  border-t-[0.2px] border-gray-300 mx-[50px]  max-md:w-[90%] max-md:mx-auto">
+        <p className="w-[66em] text-[12px] text-[#818C97] max-md:w-[100%] ">
           Piggyvest (formerly piggybank.ng) is the leading online savings &
           investing platform in Nigeria. For over 9 years, our customers have
           saved and invested billions of Naira that they would normally be
