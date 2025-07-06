@@ -9,13 +9,13 @@ import twentyOne from "../assets/images/twentyOne.png";
 
 const Invest = () => {
   return (
-    <div className=" mx-auto  " style={{ backgroundColor: "#F2F7F8" }}>
+    <div className=" mx-auto   " style={{ backgroundColor: "#F2F7F8" }}>
       <div
         className=" mx-auto max-tablet:flex flex-col"
         style={{ backgroundColor: "#F2F7F8" }}
       >
         <section
-          className="flex justify-between items-center max-w-[1280px] px-16 pt-20"
+          className="flex justify-between items-center max-w-[1280px] px-16 pt-[150px]"
           style={{ backgroundColor: "hsl(269, 85%, 49%)" }}
         >
           <div className="text-white ">
@@ -54,7 +54,6 @@ const Invest = () => {
           </div>
 
           <div>
-            <img src={main1} alt="Invest" className="max-h-[800px] " />
             <img src={main1} alt="Invest" className="max-h-[800px] " />
           </div>
         </section>
@@ -116,50 +115,7 @@ const Invest = () => {
             <img src={estate} alt="Investment" className="max-h-[250px]" />
           </div>
         </section>
-        <section
-          className="max-w-[1280px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-16 pb-20"
-          style={{ backgroundColor: "#F2F7F8" }}
-        >
-          <div className="bg-white rounded-3xl pt-6 px-6">
-            <h1
-              className="text-4xl font-bold w-1.5  mb-3"
-              style={{ color: "#7913E5" }}
-            >
-              Investments simplified
-            </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
-              With minimum investments starting as low as N5,000, investment is
-              no longer out of reach. Everyone is welcome.
-            </p>
-            <img src={investors} alt="Investors" className="max-h-[250px]" />
-          </div>
-          <div className="bg-white rounded-3xl pt-6 px-6">
-            <h1
-              className="text-4xl font-bold w-1.5  mb-3"
-              style={{ color: "#7913E5" }}
-            >
-              Invest confidently
-            </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
-              We work with leading licensed investment houses such as ARM, AIICO
-              and Stanbic.
-            </p>
-            <img src={explore} alt="explore" className="max-h-[250px]" />
-          </div>
-          <div className="bg-white rounded-3xl pt-6 px-6">
-            <h1
-              className="text-4xl font-bold   mb-3"
-              style={{ color: "#7913E5" }}
-            >
-              Diversify your portfolio
-            </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
-              Invest in various industries such as fixed income instruments,
-              agriculture, transportation, etc.
-            </p>
-            <img src={estate} alt="Investment" className="max-h-[250px]" />
-          </div>
-        </section>
+
         <section
           style={{
             height: "80vh",
