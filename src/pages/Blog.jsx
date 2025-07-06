@@ -1,4 +1,4 @@
-import Blognav from "../components/Blog/Blognav";
+// import Blognav from "../components/Blog/Blognav";
 import Banner from "../assets/images/Blog/imgi_27_Frame-1000001336-1.png"
 import Main from "../assets/images/Blog/Blog-featured.jpg";
 import Bbanner from "../assets/images/Blog/Desktop.webp"
@@ -8,11 +8,12 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import RecentArray from "../components/Blog/RecentArray";
 
 const Blog = () => {
   return (
     <div className=" ">
-      <Blognav/>
+      {/* <Blognav/> */}
 
       <div className="position: relative">
         <img src={Banner} alt="" />
@@ -67,146 +68,109 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-6">
-        <div className="flex  items-center w-full gap-5">
+      <div className="w-[100%]  mx-auto p-6">
+        <div className="flex items-center w-full gap-5">
           <h1 className="text-[40px] font-[600] mr-[30px]">Most Recent</h1>
           <hr className="w-150 border-t-2 border-gray-200" />
-          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+          <button className="border-1 rounded-[13px] border-gray-200 py-[13px] px-[80px] ">
             View all
           </button>
         </div>
 
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
+          <div className="w-[100%] mx-auto bg-white rounded-lg pb-[20px]">
+           <RecentArray/>
           </div>
-        </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-6">
-        <div className="flex  items-center w-full gap-5">
+      <div className="w-[100%] mx-auto gap-y-[30px] p-6">
+        <div className="flex items-center w-full gap-5">
           <h1 className="text-[40px] font-[600] mr-[30px]">Money Tip</h1>
           <hr className="w-150 border-t-2 border-gray-200" />
-          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+          <button className="border-1 rounded-[13px] border-gray-200 py-[13px] px-[80px] ">
             View all
           </button>
         </div>
 
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
+         <div className="w-[100%] mx-auto bg-white rounded-lg pb-[20px]">
+           <RecentArray/>
           </div>
-        </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-6">
-        <div className="flex  items-center w-full gap-5">
+      <div className="w-[100%] mx-auto p-6">
+        <div className="flex mb-[20px] items-center w-full gap-5">
           <h1 className="text-[40px] font-[600] mr-[30px]">How To</h1>
-          <hr className="w-150 border-t-2 border-gray-200" />
-          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+          <hr className="w-195 border-t-2 border-gray-200" />
+          <button className="border-1 rounded-[13px] border-gray-200 py-[10px] px-[60px] ">
             View all
           </button>
         </div>
 
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
+       <div className="w-[100%] mx-auto bg-white rounded-lg pb-[20px]">
+           <RecentArray/>
           </div>
-        </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-6">
+      <div className="w-[100%] mx-auto p-6">
         <div className="flex  items-center w-full gap-5">
           <h1 className="text-[40px] font-[600] mr-[30px]">Announcement</h1>
-          <hr className="w-150 border-t-2 border-gray-200" />
-          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+          <hr className="w-170 border-t-2 border-gray-200" />
+          <button className="rounded-[13px] border-1 border-gray-200 py-[10px] px-[60px] ">
             View all
           </button>
         </div>
 
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
+        <div className="w-[100%] mx-auto bg-white rounded-lg pb-[20px] mb-[380px]">
+           <RecentArray/>
           </div>
-        </div>
+      </div>
+      <div className="w-[100%]  mx-auto p-6 relative">
+      <div className="w-[1220px] px-[80px] h-[400px] mx-auto p-6 absolute bottom-[-85px] gap-y-[20px] bg-[#E9F4FE] rounded-[20px] display flex flex-col justify-center items-center">
+        <h3 className="text-[23px] font-[700]">MY MONEY MISTAKE</h3>
+        <h1 className="text-[41px] leading-10 w-[1100] font-[500]">“I wasn’t even doing it for the money. I just didn’t want to lose the job. At this stage, my father was tired of me.”</h1>
+        <h3 className="text-[23px] font-[700]">Adaora Nwodo</h3>
+        <button className=' text-white bg-blue-700 px-5 py-2 rounded-[20px]'>Money Tips</button>
+      </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-6">
-        <div className="flex  items-center w-full gap-5">
+      <div className="w-[100%] h-[850px] mx-auto p-6 text-white bg-black display flex flex-col justify-center items-center">
+        <div className="flex items-center w-full gap-5">
           <h1 className="text-[40px] font-[600] mr-[30px]">My Money Mistake</h1>
           <hr className="w-150 border-t-2 border-gray-200" />
-          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+          <button className="border-1 rounded-[13px] border-gray-200 py-[10px] px-[60px] ">
             View all
           </button>
         </div>
-
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
+         <div className="w-[100%] mx-auto  bg-black rounded-lg pb-[20px]">
+           <RecentArray/>
           </div>
-        </div>
       </div>
 
       <div className="w-full mx-auto p-6 bg-blue-700 text-white flex justify-between items-center gap-5 py-10">
-        <h1 className="text-[45px] font-[600] w-[320px]">Subscribe to
-our newsletter..</h1>
+        <h1 className="text-[45px] font-[600] py-[50px] w-[320px]">Subscribe to our newsletter..</h1>
         <div className="w-[550px]">
           <h2 className="flex justify-between items-center text-[27px] font-[400]"><span>Enter e-mail address</span> <span><IoMdArrowRoundForward/></span></h2>
-          <hr className="border-t-2 border-gray-100"/>
+          <hr className=" border-t-2 border-gray-100"/>
           <p className="text-[10px]">By “submitting”, you agree to join the ‘Money Matters’ Newsletter.</p>
         </div>
       </div>
       
-           <div className="max-w-[1200px] mx-auto p-6">
+           <div className="w-[100%] mx-auto p-6">
         <div className=" w-full">
-          <h1 className="text-[40px] font-[600]">My Money Mistake</h1>
+          <h1 className="text-[40px] font-[600]">Explore All</h1>
           <div className="flex gap-5 mt-[20px]">
               <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">Money Tips</button>
           <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">
             Finance
           </button>
-          <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">App Guide</button>
+          <button className=" border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">App Guide</button>
         </div>
         </div>
 
-        <div className="">
-          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px] mt-[25px]">
-            {/* <Card
-              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
-              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
-              Text="Money Tips"
-            /> */}
-
-
-            <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[5px] px-[18px] ">Load More</button>
+        <div className="w-[100%] mx-auto bg-white rounded-lg pb-[20px] flex flex-col justify-center items-center">
+           <RecentArray/>
+            <RecentArray />
+           <button className="self-center my-[50px] border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">Load More</button>
           </div>
-        </div>
       </div>
               <img src={Bbanner} alt="" className="w-fit rounded-[10px]"/>
       <div>
@@ -221,7 +185,7 @@ our newsletter..</h1>
       </div>
       </div>
 
-        <footer className="w-[1300px]  bg-gray-100 gap-[20px] text-black  grid grid-cols-7 py-10">
+        {/* <footer className="w-[1300px]  bg-gray-100 gap-[20px] text-black  grid grid-cols-7 py-10">
           <div className="spans col-span-2 mr-20">
             <img src="https://blog.piggyvest.com/wp-content/uploads/2021/09/Layer-21.svg" alt="footer logo" className="w-[300px]"/>
             <p className="mt-[10px] w-[360px] ">PiggyVest (formerly piggybank.ng) is the leading savings & investment platform in Nigeria.  For over 9 years our customers have saved and invested trillions of Naira that they would normally be tempted to spend.</p>
@@ -265,7 +229,7 @@ our newsletter..</h1>
             <p></p>
             <p></p>
           </div>
-        </footer>
+        </footer> */}
     </div>
   );
 };
