@@ -27,10 +27,10 @@ const FlexMoney = () => {
     <div className="bg-[#f2f7f8] pt-20 pb-24">
       <div className="  flex flex-col items-center">
         <section className=" text-center">
-          <h1 className=" font-bold text-5xl tracking-tight mb-[10px]">
+          <h1 className=" font-bold text-5xl tracking-tight mb-[10px] max-md:text-[43px] max-md:mb-[30px]">
             Preserve and grow your money
           </h1>
-          <p className=" text-[16px] text-[#4d5966] tracking-tighter">
+          <p className=" text-[16px] text-[#4d5966] tracking-tighter max-md:text-[18px] max-md:mb-[30px]">
             Target Savings helps you get there faster. You can even team up with
             others to reach a collective target.
           </p>
@@ -38,13 +38,13 @@ const FlexMoney = () => {
         <section className=" flex justify-center max-w-[1200px] flex-wrap  gap-8 mt-[5%]">
           {flexCard?.map((data, i) => (
             <main
-              className=" bg-white h-[550px] w-[360px] pt-9 pl-6 pr-10 rounded-2xl flex flex-col justify-between"
+              className=" bg-white h-[550px] w-[360px] pt-9 pl-6 pr-10 rounded-2xl flex flex-col justify-between max-md:pr-6"
               key={i}
             >
               <div>
                 <h1
                   style={{ color: `${data.color}` }}
-                  className=" font-bold text-3xl w-[250px] mb-[20px]"
+                  className=" font-bold text-3xl w-[250px] mb-[20px] max-md:text-center max-md:text-[38px] max-md:w-[300px]"
                 >
                   {data.title}
                 </h1>
