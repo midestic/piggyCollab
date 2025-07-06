@@ -1,5 +1,5 @@
 import logo from "../assets/images/logo.png";
-import x from "../assets/images/x.png";
+import x from "../assets/images/X.png";
 import face from "../assets/images/fb.png";
 import you from "../assets/images/you.png";
 import techCabal from "../assets/images/techCabal.png";
