@@ -9,16 +9,19 @@ const TargetHero = () => {
   return (
     <div className="max-h-[100vh] bg-[#10b259] pt-[100px] overflow-hidden">
       <div className=" flex items-center max-w-[1200px] mx-auto h-full ">
-        <div className="flex items-center justify-between w-full mt-[7.5%]">
+        <div className="flex items-center justify-between w-full mt-[7.5%] max-md:flex-col max-md:w-[90%] mx-auto">
           <div className="text-white w-[500px]">
-            <h1 className="text-[50px] font-semibold tracking-tighter ">
+            <h1 className="text-[50px] font-semibold tracking-tighter max-md:text-center">
               Target Savings
             </h1>
-            <div className="flex items-center w-[220px] h-[40px] bg-[#ffffff] gap-2 rounded-full text-[#0c1825] justify-center mb-[20px]">
-              <span>
+            <div
+              className="flex items-center w-[220px] h-[40px] bg-[#ffffff] gap-2 rounded-full text-[#0c1825]
+             justify-center mb-[20px] border"
+            >
+              <span className="">
                 <BsBullseye size={15} color="#10b259" />
               </span>
-              <span className="font-normal text-emerald-400">
+              <span className="font-normal text-emerald-400 ">
                 Goal-oriented Savings
               </span>
             </div>

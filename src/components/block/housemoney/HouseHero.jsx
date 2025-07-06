@@ -26,7 +26,7 @@ const HouseHero = () => {
               Semi-strict wallet to save for your house rent and bills. Earn up
               to 14% interest p.a
             </p>
-            <div className="flex gap-2  max-md:w-[90%] max-md:mx-auto max-md:justify-between">
+            <div className="flex gap-2  max-md:w-[80%] max-md:mx-auto max-md:justify-between max-md:gap-x-[10px] ">
               <PiggyBtn
                 title="Get on iPhone"
                 iconTitle={<FaApple />}
