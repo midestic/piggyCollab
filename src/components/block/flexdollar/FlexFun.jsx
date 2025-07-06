@@ -4,10 +4,10 @@ import target3 from "../../../assets/images/target3.png";
 const FlexFun = () => {
   return (
     <div className="bg-[#f2f7f8]">
-      <div className="h-[455px] bg-[#0c1825]">
-        <div className="flex items-center  max-w-[1200px] mx-auto h-full overflow-hidden justify-between">
-          <div>
-            <h1 className="font-semibold text-6xl tracking-tighter max-w-[450px] text-white  leading-18 mb-[20px]">
+      <div className=" bg-[#0c1825]">
+        <div className="flex items-center max-w-[1200px] mx-auto h-full overflow-hidden justify-between max-md:flex-col max-md:pt-[10%] max-md:text-center max-md:px-0">
+          <div className="max-md:mb-[10%]">
+            <h1 className="font-semibold text-6xl tracking-tighter max-w-[450px] text-white leading-18 mb-[20px] max-md:text-5xl max-md:leading-15">
               Preserve the value of your money
             </h1>
             <p className="text-[17px] text-[#ffff] tracking-tighter max-w-[430px]">
@@ -17,7 +17,7 @@ const FlexFun = () => {
               like Dollars helps to hedge against that.
             </p>
           </div>
-          <div className="max-w-[593px] h-full items-end">
+          <div className="w-[593px] h-full items-end max-md:w-full">
             <img src={target3} alt="" />
           </div>
         </div>
