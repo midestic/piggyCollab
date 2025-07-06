@@ -2,7 +2,7 @@ import React from "react";
 
 const SafelockHero = () => {
   return (
-    <div>
+    <div className="max-md:w-[100%]">
       <div
         className="flex justify-between items-center bg-[#2295F2] px-[50px] pt-[160px] max-md:flex-col  
       max-md:gap-y-[50px]"
