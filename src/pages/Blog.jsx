@@ -1,8 +1,21 @@
+import Blognav from "../components/Blog/Blognav";
+import Banner from "../assets/images/Blog/imgi_27_Frame-1000001336-1.png"
+import Main from "../assets/images/Blog/Blog-featured.jpg";
+import Bbanner from "../assets/images/Blog/Desktop.webp"
+import { IoMdArrowRoundForward } from "react-icons/io";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+
 const Blog = () => {
   return (
     <div className=" ">
+      <Blognav/>
+
       <div className="position: relative">
-        <img src="" alt="" />
+        <img src={Banner} alt="" />
         <div className="position: absolute bottom-7 left-120 text-center">
           <h2 className="">Which PiggyVest Feature are you?</h2>
           <a href="http://" className="text-blue-800 underline ">
@@ -11,7 +24,7 @@ const Blog = () => {
         </div>
       </div>
       <div className="my-[50px] h- w-[100%]">
-        <img src="" alt="" className="w-[100%]" />
+        <img src={Main} alt="" className="w-[100%]" />
       </div>
       <div className="max-w-[1200px] mx-auto flex justify-between items-start gap-10 p-6">
         <div className=" w-[600px] my-6">
@@ -23,8 +36,7 @@ const Blog = () => {
             Annoucements
           </button>
         </div>
-        <div className="flex flex-col gap-5 w-[600px] items-start">
-          {" "}
+        <div className="flex flex-col gap-5 w-[600px] items-start mt-[35px]">
           <h3 className="text-[21px] font-[500] text-blue-700">Most popular</h3>
           <div className="flex justify-between items-center gap-5 border-b-2 border-gray-100">
             <h4 className="text-[18px] font-[400] w-[350px]">
@@ -75,6 +87,185 @@ const Blog = () => {
           </div>
         </div>
       </div>
+
+      <div className="max-w-[1200px] mx-auto p-6">
+        <div className="flex  items-center w-full gap-5">
+          <h1 className="text-[40px] font-[600] mr-[30px]">Money Tip</h1>
+          <hr className="w-150 border-t-2 border-gray-200" />
+          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+            View all
+          </button>
+        </div>
+
+        <div className="">
+          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
+            {/* <Card
+              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
+              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              Text="Money Tips"
+            /> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto p-6">
+        <div className="flex  items-center w-full gap-5">
+          <h1 className="text-[40px] font-[600] mr-[30px]">How To</h1>
+          <hr className="w-150 border-t-2 border-gray-200" />
+          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+            View all
+          </button>
+        </div>
+
+        <div className="">
+          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
+            {/* <Card
+              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
+              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              Text="Money Tips"
+            /> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto p-6">
+        <div className="flex  items-center w-full gap-5">
+          <h1 className="text-[40px] font-[600] mr-[30px]">Announcement</h1>
+          <hr className="w-150 border-t-2 border-gray-200" />
+          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+            View all
+          </button>
+        </div>
+
+        <div className="">
+          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
+            {/* <Card
+              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
+              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              Text="Money Tips"
+            /> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[1200px] mx-auto p-6">
+        <div className="flex  items-center w-full gap-5">
+          <h1 className="text-[40px] font-[600] mr-[30px]">My Money Mistake</h1>
+          <hr className="w-150 border-t-2 border-gray-200" />
+          <button className="border-1 border-gray-200 py-[13px] px-[80px] ">
+            View all
+          </button>
+        </div>
+
+        <div className="">
+          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px]">
+            {/* <Card
+              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
+              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              Text="Money Tips"
+            /> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full mx-auto p-6 bg-blue-700 text-white flex justify-between items-center gap-5 py-10">
+        <h1 className="text-[45px] font-[600] w-[320px]">Subscribe to
+our newsletter..</h1>
+        <div className="w-[550px]">
+          <h2 className="flex justify-between items-center text-[27px] font-[400]"><span>Enter e-mail address</span> <span><IoMdArrowRoundForward/></span></h2>
+          <hr className="border-t-2 border-gray-100"/>
+          <p className="text-[10px]">By “submitting”, you agree to join the ‘Money Matters’ Newsletter.</p>
+        </div>
+      </div>
+      
+           <div className="max-w-[1200px] mx-auto p-6">
+        <div className=" w-full">
+          <h1 className="text-[40px] font-[600]">My Money Mistake</h1>
+          <div className="flex gap-5 mt-[20px]">
+              <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">Money Tips</button>
+          <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">
+            Finance
+          </button>
+          <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[8px] px-[35px] ">App Guide</button>
+        </div>
+        </div>
+
+        <div className="">
+          <div className="w-[370px]  overflow-hidden shadow-lg  flex flex-col items-center bg-white rounded-lg pb-[20px] mt-[25px]">
+            {/* <Card
+              imageUrl="https://blog.piggyvest.com/wp-content/uploads/elementor/thumbs/Untitled-design-42-r5ctc1jwbfjpezdsihqo927uxzhz0rvntl51t4t21s.jpg"
+              title="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              description="Building Wealth in Your 20s: Practical Money-Saving Strategies for Young Nigerians"
+              Text="Money Tips"
+            /> */}
+
+
+            <button className="border-1 border-gray-200 rounded-[10px] cursor-pointer py-[5px] px-[18px] ">Load More</button>
+          </div>
+        </div>
+      </div>
+              <img src={Bbanner} alt="" className="w-fit rounded-[10px]"/>
+      <div>
+
+         <div className="w-full mx-auto p-6  text-black flex justify-between items-center gap-5 py-10">
+            <h1 className="text-[45px] font-[600] w-[320px]">Subscribe to our newsletter..</h1>
+            <div className="w-[550px]">
+            <h2 className="flex justify-between items-center text-gray-400 text-[27px] font-[400]"><span>Enter e-mail address</span> <span><IoMdArrowRoundForward/></span></h2>
+            <hr className="border-t-2 border-gray-300"/>
+            <p className="text-[10px]">By “submitting”, you agree to join the ‘Money Matters’ Newsletter.</p>
+        </div>
+      </div>
+      </div>
+
+        <footer className="w-[1300px]  bg-gray-100 gap-[20px] text-black  grid grid-cols-7 py-10">
+          <div className="spans col-span-2 mr-20">
+            <img src="https://blog.piggyvest.com/wp-content/uploads/2021/09/Layer-21.svg" alt="footer logo" className="w-[300px]"/>
+            <p className="mt-[10px] w-[360px] ">PiggyVest (formerly piggybank.ng) is the leading savings & investment platform in Nigeria.  For over 9 years our customers have saved and invested trillions of Naira that they would normally be tempted to spend.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#"> PiggyBank</a></li>
+              <li><a href="#">investify</a></li>
+              <li><a href="#">Safelock Us</a></li>
+              <li><a href="#">Target Savings</a></li>
+              <li><a href="#">Flex Naira</a></li>
+              <li><a href="#">Flex Dollar</a></li>
+              <li><a href="#">House Money</a></li>
+              </ul>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#"> PiggyBank</a></li>
+              <li><a href="#">investify</a></li>
+              <li><a href="#">Safelock Us</a></li>
+             </ul>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#"> PiggyBank</a></li>
+              <li><a href="#">investify</a></li>
+              <li><a href="#">Safelock Us</a></li>
+              </ul>
+          </div>
+          <div className="col-span-2">
+            <div className="flex gap-4 text-[30px]">
+            <span><FaFacebookSquare/></span>
+            <span><FaInstagram/></span>
+            <span><FaTwitterSquare/></span>
+            <span><FaTiktok/></span>
+            <span><FaYoutube/></span>
+            </div>
+            <p></p>
+            <p></p>
+          </div>
+        </footer>
     </div>
   );
 };
