@@ -7,7 +7,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa";
 import woman from "../assets/images/woman.png";
 import twentyOne from "../assets/images/twentyOne.png";
 import nineteenFive from "../assets/images/nineteenFive.jpg";
-import  seventeen from "../assets/images/seventeen.png";
+import seventeen from "../assets/images/seventeen.png";
 import nineteenFifty from "../assets/images/nineteenFifty.jpg";
 import twentyTwoG from "../assets/images/twentyTwoG.jpg";
 import twentyTwo from "../assets/images/twentyTwo.jpg";
@@ -15,16 +15,16 @@ import HouseInvest from "../components/block/housemoney/HouseInvest";
 
 const Invest = () => {
   return (
-    <div className=" mx-auto   " style={{ backgroundColor: "#F2F7F8" }}>
-      <div
-        className=" mx-auto max-tablet:flex flex-col"
-        style={{ backgroundColor: "#F2F7F8" }}
-      >
+    <div
+      className=" mx-auto   max-md:w-[100%]"
+      style={{ backgroundColor: "#F2F7F8" }}
+    >
+      <div className=" mx-auto " style={{ backgroundColor: "#F2F7F8" }}>
         <section
-          className="flex justify-between items-center max-w-[1280px] px-16 pt-[150px]"
+          className="flex justify-between items-center max-w-[1280px] px-16 pt-[150px] max-md:flex-col"
           style={{ backgroundColor: "hsl(269, 85%, 49%)" }}
         >
-          <div className="text-white ">
+          <div className="text-white max-md:w-[100%] border">
             <h1 className="text-5xl font-bold mb-8">Invest on the go</h1>
             <span
               className="bg-white text-xl mb-8 inline-block px-6 py-3 rounded-4xl"
@@ -146,146 +146,237 @@ const Invest = () => {
             <img src={woman} alt="" className="h-[485px]  w-[1800px]" />
           </div>
         </section>
-        
       </div>
-      <section className='max-w-[1280px] mx-auto'>
-           <h1 className='text-center text-6xl font-bold pb-24' style={{ color: '#122231' }}>Recent Opportunities on Investify</h1>
-        <div className='grid grid-cols-3 gap-6 px-20 pb-8'>
-
-          <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6'>
-            <img src={twentyOne} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLVII</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>578</div>
-                  <div>investors</div>
-                </span>
+      <section className="max-w-[1280px] mx-auto">
+        <h1
+          className="text-center text-6xl font-bold pb-24"
+          style={{ color: "#122231" }}
+        >
+          Recent Opportunities on Investify
+        </h1>
+        <div className="grid grid-cols-3 gap-6 px-20 pb-8">
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={twentyOne}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLVII
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">578</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
+          </main>
 
-        <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6' >
-            <img src={nineteenFive} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLVI</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>745</div>
-                  <div>investors</div>
-                </span>
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={nineteenFive}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLVI
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">745</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
+          </main>
 
-        <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6' >
-            <img src={seventeen} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLV</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>470</div>
-                  <div>investors</div>
-                </span>
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={seventeen}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLV
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">470</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
+          </main>
 
-        <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6'>
-            <img src={nineteenFifty} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLVII</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>859</div>
-                  <div>investors</div>
-                </span>
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={nineteenFifty}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLVII
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">859</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
+          </main>
 
-        <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6' >
-            <img src={twentyTwoG} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLVI</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>373</div>
-                  <div>investors</div>
-                </span>
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={twentyTwoG}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLVI
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">373</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
+          </main>
 
-        <main className='max-w-[1280px]'>
-          <div className='bg-white rounded-3xl space-y-6' >
-            <img src={twentyTwo} alt="" className='rounded-tl-3xl rounded-tr-3xl ' />
-            <div className='px-6'>
-              <h1 className='text-2xl font-bold pb-5' style={{ color: '#122231' }}>CORPORATE DEBT NOTE SERIES XLVII</h1>
-              <div className='flex justify-between items-center pb-5' style={{ color: '#485F6E' }}>
-                <span>
-                  <div className='text-xl'>₦5,000</div>
-                  <div>per Unit</div>
-                </span>
-                <span>
-                  <div className='text-xl'>578</div>
-                  <div>investors</div>
-                </span>
+          <main className="max-w-[1280px]">
+            <div className="bg-white rounded-3xl space-y-6">
+              <img
+                src={twentyTwo}
+                alt=""
+                className="rounded-tl-3xl rounded-tr-3xl "
+              />
+              <div className="px-6">
+                <h1
+                  className="text-2xl font-bold pb-5"
+                  style={{ color: "#122231" }}
+                >
+                  CORPORATE DEBT NOTE SERIES XLVII
+                </h1>
+                <div
+                  className="flex justify-between items-center pb-5"
+                  style={{ color: "#485F6E" }}
+                >
+                  <span>
+                    <div className="text-xl">₦5,000</div>
+                    <div>per Unit</div>
+                  </span>
+                  <span>
+                    <div className="text-xl">578</div>
+                    <div>investors</div>
+                  </span>
+                </div>
+                <button
+                  className="px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5"
+                  style={{ color: "#B52E58" }}
+                >
+                  Sold Out
+                </button>
               </div>
-              <button className='px-4 py-3 rounded-4xl font-bold text-md pb-2 bg-pink-100 mb-5' style={{ color: '#B52E58' }}>
-                Sold Out
-              </button>
             </div>
-          </div>
-        </main>
-
+          </main>
         </div>
-        
       </section>
       <div>
         <HouseInvest />
