@@ -27,7 +27,7 @@ const Invest = () => {
           className="flex justify-between items-center max-w-[1280px] px-16 pt-[150px] max-md:flex-col"
           style={{ backgroundColor: "hsl(269, 85%, 49%)" }}
         >
-          <div className="text-white max-md:w-[100%] border">
+          <div className="text-white max-md:w-[100%]  max-md:flex max-md:flex-col max-md:items-center">
             <h1 className="text-5xl font-bold mb-8 max-md:text-center">
               Invest on the go
             </h1>
@@ -40,7 +40,7 @@ const Invest = () => {
             >
               Up to 35% returns
             </span>
-            <p className="w-2/3 text-2xl  mb-6">
+            <p className="w-2/3 text-2xl  mb-6 max-md:w-[100%] max-md:text-center">
               Invest securely and confidently on the go. Up to 35% returns, 6-12
               month duration.
             </p>
@@ -69,10 +69,10 @@ const Invest = () => {
           </div>
         </section>
 
-        <section className="max-w-[1280px] mx-auto px-16 pt-20 pb-10">
-          <div className="text-center ">
+        <section className="max-w-[1280px] mx-auto px-16 pt-20 pb-10 max-md:w-[100%] max-md:px-[10px]">
+          <div className="text-center max-md:w-[100%] ">
             <h1
-              className="text-5xl font-bold mt-8"
+              className="text-5xl font-bold mt-8 max-md:w-[100%]"
               style={{ color: "#122231" }}
             >
               Simple investments with great returns
@@ -86,40 +86,49 @@ const Invest = () => {
           className="max-w-[1280px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-16 pb-20"
           style={{ backgroundColor: "#F2F7F8" }}
         >
-          <div className="bg-white rounded-3xl pt-6 px-6">
+          <div className="bg-white rounded-3xl pt-6 px-6  max-md:px-0 max-md:flex max-md:flex-col max-md:items-center">
             <h1
-              className="text-4xl font-bold w-1.5  mb-3"
+              className="text-4xl font-bold w-1.5  mb-3 max-md:text-mx-auto max-md:w-[100%] max-md:text-center"
               style={{ color: "#7913E5" }}
             >
               Investments simplified
             </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
+            <p
+              className="w-5/5 text-lg mb-20 max-md:w-[100%] max-md:text-center"
+              style={{ color: "#485F6E" }}
+            >
               With minimum investments starting as low as N5,000, investment is
               no longer out of reach. Everyone is welcome.
             </p>
             <img src={investors} alt="Investors" className="max-h-[250px]" />
           </div>
-          <div className="bg-white rounded-3xl pt-6 px-6">
+          <div className="bg-white rounded-3xl pt-6 px-6  max-md:px-0 max-md:flex max-md:flex-col max-md:items-center">
             <h1
-              className="text-4xl font-bold w-1.5  mb-3"
+              className="text-4xl font-bold w-1.5  mb-3 max-md:text-mx-auto max-md:w-[100%] max-md:text-center"
               style={{ color: "#7913E5" }}
             >
               Invest confidently
             </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
+            <p
+              className="w-5/5 text-lg mb-20 max-md:w-[100%] max-md:text-center"
+              style={{ color: "#485F6E" }}
+            >
               We work with leading licensed investment houses such as ARM, AIICO
               and Stanbic.
             </p>
             <img src={explore} alt="explore" className="max-h-[250px]" />
           </div>
-          <div className="bg-white rounded-3xl pt-6 px-6">
+          <div className="bg-white rounded-3xl pt-6 px-6  max-md:px-0 max-md:flex max-md:flex-col max-md:items-center">
             <h1
-              className="text-4xl font-bold   mb-3"
+              className="text-4xl font-bold w-1.5  mb-3 max-md:text-mx-auto max-md:w-[100%] max-md:text-center"
               style={{ color: "#7913E5" }}
             >
               Diversify your portfolio
             </h1>
-            <p className="w-5/5 text-lg mb-20" style={{ color: "#485F6E" }}>
+            <p
+              className="w-5/5 text-lg mb-20 max-md:w-[100%] max-md:text-center"
+              style={{ color: "#485F6E" }}
+            >
               Invest in various industries such as fixed income instruments,
               agriculture, transportation, etc.
             </p>
@@ -131,24 +140,28 @@ const Invest = () => {
           style={{
             height: "80vh",
           }}
-          className=" max-w-[1280px] flex justify-between items-center mb-24"
+          className="  max-w-[1280px] flex justify-between items-center mb-24 max-md:auto max-md:flex-col"
         >
           <div
-            className="  px-16 py-20 space-y-6"
+            className="  px-16 py-20 space-y-6 max-md:px-[10px]"
             style={{ backgroundColor: "hsl(269, 85%, 49%)" }}
           >
-            <h1 className="text-5xl font-bold text-white leading-snug  ">
+            <h1 className="text-5xl font-bold text-white leading-snug  max-md:text-center ">
               We’ve made it easier for anyone to get started.
             </h1>
-            <p className="text-white w-[70%] text-xl">
+            <p className="text-white w-[70%] text-xl max-md:text-center max-md:w-[100%]">
               Finally, you can access pre-vetted low-medium risk primary and
               secondary investment opportunities easily with any amount you
               have. No hidden fees/charges. Thorough due diligence and
               pre-vetting on all investments are carried out for maximum safety.
             </p>
           </div>
-          <div>
-            <img src={woman} alt="" className="h-[485px]  w-[1800px]" />
+          <div className="max-md:w-[100%]">
+            <img
+              src={woman}
+              alt=""
+              className="h-[485px]  w-[1800px] max-md:w-[100%] max-md:h-auto"
+            />
           </div>
         </section>
       </div>
