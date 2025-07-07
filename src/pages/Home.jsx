@@ -1,6 +1,23 @@
-import React from "react";
-import Hero from "../components/homesections/Hero";
+import Diverse from "../components/block/home/Diverse"
+import Hero from "../components/block/home/Hero"
+import Saver from "../components/block/home/Saver"
+import Testimony from "../components/block/home/Testimony"
+import Savings from "../components/block/home/Savings"
+import Security from "../components/block/home/Security"
 
-export default function Home() {
-  return <div></div>;
+
+
+const Home = () => {
+  return (
+    <div className=''>
+        <Hero/>
+        <Security/>
+        <Savings/>
+        <Diverse/>
+        <Saver/>
+        <Testimony/>
+    </div>
+  )
 }
+
+export default Home
