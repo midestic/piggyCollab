@@ -16,18 +16,23 @@ import HouseInvest from "../components/block/housemoney/HouseInvest";
 const Invest = () => {
   return (
     <div
-      className=" mx-auto   max-md:w-[100%]"
+      className=" mx-auto border   max-md:w-[100%]"
       style={{ backgroundColor: "#F2F7F8" }}
     >
-      <div className=" mx-auto " style={{ backgroundColor: "#F2F7F8" }}>
+      <div
+        className=" mx-auto max-md:w-[100%]"
+        style={{ backgroundColor: "#F2F7F8" }}
+      >
         <section
           className="flex justify-between items-center max-w-[1280px] px-16 pt-[150px] max-md:flex-col"
           style={{ backgroundColor: "hsl(269, 85%, 49%)" }}
         >
           <div className="text-white max-md:w-[100%] border">
-            <h1 className="text-5xl font-bold mb-8">Invest on the go</h1>
+            <h1 className="text-5xl font-bold mb-8 max-md:text-center">
+              Invest on the go
+            </h1>
             <span
-              className="bg-white text-xl mb-8 inline-block px-6 py-3 rounded-4xl"
+              className="bg-white text-xl mb-8 inline-block px-6 py-3 rounded-4xl max-md:mx-auto"
               style={{
                 color: "hsl(269, 85%, 49%)",
                 backgroundColor: "#EFF5FC",

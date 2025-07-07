@@ -12,6 +12,7 @@ import FAQs from "./pages/FAQs";
 import Safelock from "./pages/Safelock";
 import FlexNaira from "./pages/FlexNaira";
 import Piggyvest from "./pages/Piggyvest";
+import Stories from "./pages/Stories";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/safelock" element={<Safelock />} />
             <Route path="/flexnaira" element={<FlexNaira />} />
             <Route path="/piggybank" element={<Piggyvest />} />
+            <Route path="/stories" element={<Stories />} />
           </Routes>
 
           <Footer />
