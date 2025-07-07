@@ -8,8 +8,14 @@ const Hero = () => {
   return (
     <>
       <div className="bg-[#F2F7F8]">
-        <div className="flex justify-between pt-[90px] max-w-[1280px] h-full px-16 mx-auto items-center  pb-[130px] max-tablet:flex-col">
-          <section className="max-w-[450px] max-tablet:flex max-tablet:flex-col max-tablet:items-center max-tablet:text-center max-tablet:max-w-[600px] max-tablet:mb-6">
+        <div
+          className="flex justify-between pt-[150px] max-w-[1280px] h-full px-16 mx-auto items-center  pb-[130px] flex-wrap max-md:max-w-[100%]
+        max-md:flex-col max-md:gap-y-[50px]"
+        >
+          <section
+            className="max-w-[450px] max-tablet:flex max-tablet:flex-col max-tablet:items-center max-md:w-[100%]
+           max-tablet:text-center max-tablet:max-w-[600px] max-tablet:mb-6"
+          >
             <a href="#">
               <div className="flex  items-center bg-[#0089FF] w-[350px] rounded-[48px] px-2.5 py-1.5 text-[white] gap-1.5 font-semibold mb-6 ">
                 <img src="/images/booklogo.svg" alt="" className="book" />
@@ -41,8 +47,12 @@ const Hero = () => {
               </div>
             </a>
           </section>
-          <section className="max-w-[550px] relative ">
-            <img src="/images/lady.avif" alt="" className=" w-full h-[550px] " />
+          <section className="max-w-[550px] relative max-md:max-w-[95%] max-md:mx-auto">
+            <img
+              src="/images/lady.avif"
+              alt=""
+              className=" w-full h-[550px] "
+            />
             <main>
               <img
                 src="/images/image01.png"
